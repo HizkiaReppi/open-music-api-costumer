@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export Playlist</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      h1 {
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      .thank-you {
+        text-align: center;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .download-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .signature {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .app-name {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Selamat datang di Open Music</h1>
+      <p>Dear {{name}},</p>
+      <p>Anda telah berhasil mengekspor playlist musik Anda!</p>
+      <p>Berikut adalah playlist musik yang telah Anda eksport:</p>
+      <p>
+        Jangan ragu untuk menikmati musik-musik favorit Anda dan berbagi dengan
+        teman-teman Anda!
+      </p>
+      <div class="button-container">
+        <a href="{{attachmentURL}}" download>
+          <button class="download-button">Unduh Playlist</button>
+        </a>
+      </div>
+      <p class="thank-you">Terima kasih telah menggunakan layanan kami!</p>
+      <p class="signature">
+        Salam hangat,<br />
+        Tim Open Music
+      </p>
+      <p class="app-name">Open Music - Aplikasi Musik Terbaik untuk Semua</p>
+    </div>
+  </body>
+</html>
